@@ -1,7 +1,7 @@
 import java.util.Properties
-import org.lineageos.generatebp.GenerateBpPlugin
-import org.lineageos.generatebp.GenerateBpPluginExtension
-import org.lineageos.generatebp.models.Module
+import com.aospb.generatebp.GenerateBpPlugin
+import com.aospb.generatebp.GenerateBpPluginExtension
+import com.aospb.generatebp.models.Module
 
 plugins {
     id("com.android.application")
@@ -18,7 +18,7 @@ buildscript {
     }
 
     dependencies {
-        classpath("org.lineageos:gradle-generatebp:+")
+        classpath("com.aospb:gradle-generatebp:+")
     }
 }
 
@@ -33,7 +33,7 @@ android {
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "org.lineageos.updater"
+        applicationId = "com.aospb.updater"
         minSdk = 30
         targetSdk = 33
         versionCode = 1
