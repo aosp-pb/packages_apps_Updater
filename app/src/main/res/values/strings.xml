@@ -164,4 +164,6 @@
     <string name="local_update_import_failure">Failed to import local update</string>
     <string name="local_update_import_install">Install</string>
     <string name="local_update_name">Local update</string>
+
+    <string name="settingslib_config_headlineFontFamily" translatable="false">@*android:string/config_headlineFontFamily</string>
 </resources>

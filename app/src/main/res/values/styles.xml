@@ -17,6 +17,14 @@
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:textAppearanceListItem">@style/TextAppearance.PreferenceTitle.SettingsLib</item>
+    </style>
+
+    <style name="TextAppearance.PreferenceTitle.SettingsLib"
+           parent="@android:style/TextAppearance.Material.Subhead">
+        <item name="android:textColor">@color/settingslib_text_color_primary</item>
+        <item name="android:fontFamily">@string/settingslib_config_headlineFontFamily</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar" />
