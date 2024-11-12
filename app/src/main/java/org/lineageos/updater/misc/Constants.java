@@ -47,7 +47,7 @@ public final class Constants {
     public static final String PROP_RELEASE_TYPE = "ro.custom.releasetype";
     public static final String PROP_UPDATER_ALLOW_DOWNGRADING = "custom.updater.allow_downgrading";
     public static final String PROP_UPDATER_URI = "custom.updater.uri";
-    public static final String PROP_BRAND = "ro.custom.brand";
+    public static final String PROP_BRAND = "ro.custom.showversion";
 
     public static final String PREF_INSTALL_OLD_TIMESTAMP = "install_old_timestamp";
     public static final String PREF_INSTALL_NEW_TIMESTAMP = "install_new_timestamp";
