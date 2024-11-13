@@ -279,8 +279,8 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
 
         String buildDate = StringGenerator.getDateLocalizedUTC(mActivity,
                 DateFormat.LONG, update.getTimestamp());
-        String buildVersion = mActivity.getString(R.string.list_build_version,
-                Utils.getDisplayVersion(update.getVersion()));
+        String buildVersion = mActivity.getString(R.string.aospb_build_version, BuildInfoUtils.getBrand());
+                // Utils.getDisplayVersion(update.getVersion()));
         viewHolder.mBuildDate.setText(buildDate);
         viewHolder.mBuildVersion.setText(buildVersion);
         viewHolder.mBuildVersion.setCompoundDrawables(null, null, null, null);
@@ -499,8 +499,8 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
 
         String buildDate = StringGenerator.getDateLocalizedUTC(mActivity,
                 DateFormat.MEDIUM, update.getTimestamp());
-        String buildInfoText = mActivity.getString(R.string.list_build_version_date,
-                update.getVersion(), buildDate);
+        String buildInfoText = mActivity.getString(R.string.aospb_build_version_date, BuildInfoUtils.getBrand(), buildDate);
+                // update.getVersion(), buildDate);
         return new AlertDialog.Builder(mActivity)
                 .setTitle(R.string.apply_update_dialog_title)
                 .setMessage(mActivity.getString(resId, buildInfoText,
@@ -531,9 +531,12 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
         if (alreadySeen) {
             return;
         }
+        final String message =
+                mActivity.getString(R.string.info_dialog_message, BuildInfoUtils.getBrand());
         new AlertDialog.Builder(mActivity)
                 .setTitle(R.string.info_dialog_title)
-                .setMessage(R.string.info_dialog_message)
+                .setMessage(message)
+                // .setMessage(R.string.info_dialog_message)
                 .setPositiveButton(R.string.info_dialog_ok, (dialog, which) -> preferences.edit()
                         .putBoolean(Constants.HAS_SEEN_INFO_DIALOG, true)
                         .apply())
