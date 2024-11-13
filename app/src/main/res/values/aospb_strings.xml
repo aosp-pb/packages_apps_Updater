@@ -13,4 +13,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="blocked_update_dialog_message_custom">This update cannot be installed using the updater app. Try installing update via recovery.</string>
+
+    <!-- Custom Strings for title and list -->
+    <string name="aospb_header_title">aosPB-Project Updates</string>
+    <string name="aospb_build_version"><xliff:g id="brand">%1$s</xliff:g></string>
+    <string name="aospb_build_version_date"><xliff:g id="brand">%1$s</xliff:g> - <xliff:g id="date">%3$s</xliff:g></string>
 </resources>

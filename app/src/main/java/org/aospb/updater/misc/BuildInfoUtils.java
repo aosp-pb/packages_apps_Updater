@@ -26,7 +26,11 @@ public final class BuildInfoUtils {
         return SystemProperties.getLong(Constants.PROP_BUILD_DATE, 0);
     }
 
-    public static String getBuildVersion() {
-        return SystemProperties.get(Constants.PROP_BUILD_VERSION);
+    // public static String getBuildVersion() {
+    //     return SystemProperties.get(Constants.PROP_BUILD_VERSION);
+    // }
+
+    public static String getBrand() {
+        return SystemProperties.get(Constants.PROP_BRAND);
     }
 }
