@@ -180,8 +180,8 @@ public class UpdatesActivity extends UpdatesListActivity implements UpdateImport
         }
 
         TextView headerTitle = findViewById(R.id.header_title);
-        headerTitle.setText(getString(R.string.aospb_header_title));
-                // Utils.getDisplayVersion(BuildInfoUtils.getBuildVersion())));
+        headerTitle.setText(getString(R.string.aospb_header_title,
+                Utils.getDisplayVersion(BuildInfoUtils.getBuildVersion())));
 
         updateLastCheckedString();
 
