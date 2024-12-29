@@ -32,7 +32,7 @@
           {type} - Build type
           {incr} - Incremental version
     -->
-    <string name="updater_server_url" translatable="false">https://download.lineageos.org/api/v1/{device}/{type}/{incr}</string>
+    <string name="updater_server_url" translatable="false">https://raw.githubusercontent.com/aosp-pb/aosPB_OTA/refs/heads/15/devices/{device}.json</string>
 
     <string name="verification_failed_notification">Verification failed</string>
     <string name="verifying_download_notification">Verifying update</string>
@@ -84,7 +84,7 @@
     <string name="menu_copy_url">Copy URL</string>
     <string name="menu_export_update">Export update</string>
     <string name="menu_show_changelog">Show changelog</string>
-    <string name="menu_changelog_url" translatable="false">https://download.lineageos.org/<xliff:g id="device_name">%1$s</xliff:g>/changes</string>
+    <string name="menu_changelog_url" translatable="false">https://github.com/aosp-pb/aosPB_OTA/blob/15/changelogs/{device}.md</string>
     <string name="menu_ab_perf_mode">Prioritize update process</string>
     <string name="menu_update_recovery">Update recovery</string>
     <string name="toast_forced_update_recovery">It is impossible to disable Lineage Recovery updates on this device.</string>
@@ -164,7 +164,7 @@
     <string name="update_failed_channel_title">Update failed</string>
 
     <string name="info_dialog_title">Did you know?</string>
-    <string name="info_dialog_message">LineageOS updates are full installation packages. That means you can always install only the latest update, even if you skipped some in between!</string>
+    <string name="info_dialog_message">aosPB-Project updates are full installation packages. That means you can always install only the latest update, even if you skipped some in between!</string>
     <string name="info_dialog_ok">Thanks for the info!</string>
 
     <string name="local_update_import">Local update</string>
